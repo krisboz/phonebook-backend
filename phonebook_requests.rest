@@ -1,1 +1,20 @@
-DELETE  http://localhost:3001/api/people/2
+GET http://localhost:3002/api/people
+###
+GET http://localhost:3002/api/people/65cb8e0efd732da930248c0f
+
+###
+GET http://localhost:3002/api/people/55
+
+###
+
+DELETE http://localhost:3002/api/people/65cb8e0efd732da930248c0f
+
+
+###
+POST http://localhost:3002/api/people
+Content-Type: application/json
+
+{
+    "name": "From Rest",
+    "number": 1234234
+}
